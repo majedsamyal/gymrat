@@ -15,6 +15,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import bootstrap from 'bootstrap';
 import Logo from '~/components/Logo.vue'
 
 export default Vue.extend({
