@@ -1,0 +1,5 @@
+G:\Projects\gymrat\backend\gymrat.data\bin\Debug\netcoreapp3.1\gymrat.data.deps.json
+G:\Projects\gymrat\backend\gymrat.data\bin\Debug\netcoreapp3.1\gymrat.data.dll
+G:\Projects\gymrat\backend\gymrat.data\obj\Debug\netcoreapp3.1\gymrat.data.csprojAssemblyReference.cache
+G:\Projects\gymrat\backend\gymrat.data\obj\Debug\netcoreapp3.1\gymrat.data.AssemblyInfoInputs.cache
+G:\Projects\gymrat\backend\gymrat.data\obj\Debug\netcoreapp3.1\gymrat.data.AssemblyInfo.cs
