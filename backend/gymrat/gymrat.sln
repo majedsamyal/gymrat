@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gymrat", "gymrat.csproj", "{5F2AD637-63F0-4A1E-8C2F-71DD577D9C3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gymrat.Data", "..\gymrat.data\Gymrat.Data.csproj", "{55350FCC-583E-4C79-9DB1-EE0F822B9BFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F2AD637-63F0-4A1E-8C2F-71DD577D9C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2AD637-63F0-4A1E-8C2F-71DD577D9C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2AD637-63F0-4A1E-8C2F-71DD577D9C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2AD637-63F0-4A1E-8C2F-71DD577D9C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55350FCC-583E-4C79-9DB1-EE0F822B9BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55350FCC-583E-4C79-9DB1-EE0F822B9BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55350FCC-583E-4C79-9DB1-EE0F822B9BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55350FCC-583E-4C79-9DB1-EE0F822B9BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {054B9B28-1CFF-4CD8-9D65-ACADBDC25ECF}
+	EndGlobalSection
+EndGlobal
