@@ -4,6 +4,72 @@
     "G:\\Projects\\gymrat\\backend\\gymrat\\gymrat.csproj": {}
   },
   "projects": {
+    "G:\\Projects\\gymrat\\backend\\Gymrat.Component\\Gymrat.Component.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Projects\\gymrat\\backend\\Gymrat.Component\\Gymrat.Component.csproj",
+        "projectName": "Gymrat.Component",
+        "projectPath": "G:\\Projects\\gymrat\\backend\\Gymrat.Component\\Gymrat.Component.csproj",
+        "packagesPath": "C:\\Users\\Majed\\.nuget\\packages\\",
+        "outputPath": "G:\\Projects\\gymrat\\backend\\Gymrat.Component\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Majed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\Projects\\gymrat\\backend\\gymrat.data\\Gymrat.Data.csproj": {
+                "projectPath": "G:\\Projects\\gymrat\\backend\\gymrat.data\\Gymrat.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "HotChocolate.AspNetCore": {
+              "target": "Package",
+              "version": "[10.4.3, )"
+            },
+            "HotChocolate.AspNetCore.Playground": {
+              "target": "Package",
+              "version": "[10.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "G:\\Projects\\gymrat\\backend\\gymrat.data\\Gymrat.Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -101,6 +167,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "G:\\Projects\\gymrat\\backend\\Gymrat.Component\\Gymrat.Component.csproj": {
+                "projectPath": "G:\\Projects\\gymrat\\backend\\Gymrat.Component\\Gymrat.Component.csproj"
+              },
               "G:\\Projects\\gymrat\\backend\\gymrat.data\\Gymrat.Data.csproj": {
                 "projectPath": "G:\\Projects\\gymrat\\backend\\gymrat.data\\Gymrat.Data.csproj"
               }
@@ -116,6 +185,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "HotChocolate.AspNetCore": {
+              "target": "Package",
+              "version": "[10.4.3, )"
+            },
+            "HotChocolate.AspNetCore.Playground": {
+              "target": "Package",
+              "version": "[10.4.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

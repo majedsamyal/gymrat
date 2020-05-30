@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Gymrat.Component.Rat;
 using Gymrat.Data;
+using Gymrat.Data.Repository.Core;
+using HotChocolate;
+using HotChocolate.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,8 +31,15 @@ namespace gymrat
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddGraphQL(
+                SchemaBuilder.New()
+                 .AddQueryType<RatQueryType>()
+            .Create());
             services.AddControllers();
             services.AddDbContext<GymEntityContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("GymratConnection")));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IRatQueries, RatQueries>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +55,8 @@ namespace gymrat
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseGraphQL();
+            app.UsePlayground();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

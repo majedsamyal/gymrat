@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Gymrat.Data.Repository.Core
 {
-    public class UnitOfWork
+    public class UnitOfWork: IUnitOfWork
     {
         private GymEntityContext _dbContext;
         private BaseRepository<Rat> _rats;
