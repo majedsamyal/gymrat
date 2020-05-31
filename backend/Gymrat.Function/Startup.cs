@@ -31,7 +31,7 @@ namespace Gymrat.Function
             // Add the custom services like repositories etc ...
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IRatQueries, RatQueries>();
-
+          
             // Add GraphQL Services
             services.AddGraphQL(sp => SchemaBuilder.New()
                 .AddServices(sp)
