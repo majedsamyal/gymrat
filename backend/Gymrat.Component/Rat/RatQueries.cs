@@ -17,7 +17,9 @@ namespace Gymrat.Component.Rat
         public async Task<IList<RatViewModel>> GetRats()
         {
             var result = await _unitOfWork.Rats.Get(i => !i.IsDeleted);
-            return result.Select(i => new RatViewModel() { }).ToList();
+            var lst = new List<RatViewModel>() { new RatViewModel() { Id = "1223", FirstName = "Majed" }, new RatViewModel() { Id = "456", FirstName = "Arifa" } };
+            //return result.Select(i => new RatViewModel() { }).ToList();
+            return lst;
         }
     }
 }
