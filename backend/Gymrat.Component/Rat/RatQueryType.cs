@@ -12,7 +12,7 @@ namespace Gymrat.Component.Rat
             base.Configure(descriptor);
 
             descriptor
-              .Field(f => f.GetRats()).Description("Search rats.").Type<ListType<RatViewModelType>>();
+              .Field(f => f.GetRats()).Description("Search rats.").Type<ListType<RatViewModelType>>();            
         }
     }
 }

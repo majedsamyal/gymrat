@@ -27,8 +27,13 @@ export  default {
   },
   methods: {
   async saveRat() {
-    const ip = await this.$axios.$get('http://icanhazip.com')
-    this.ip = ip
+     await this.$axios.post('graphql',{})
+    .then(function(resposne){
+      console.log(resposne);
+    })
+    .catch(function(error){
+      console.log(error);
+    });
   }
 }
 }

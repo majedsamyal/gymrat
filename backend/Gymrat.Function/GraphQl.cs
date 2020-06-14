@@ -30,5 +30,5 @@ namespace Gymrat.Function
                 req.HttpContext,
                 cancellationToken);
         }
-    }
+    } 
 }

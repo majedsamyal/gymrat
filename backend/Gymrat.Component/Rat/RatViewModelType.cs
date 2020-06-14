@@ -5,13 +5,12 @@ using System.Text;
 
 namespace Gymrat.Component.Rat
 {
-   public class RatViewModelType : ObjectType<RatViewModel>
+   public class RatViewModelType: ObjectType<RatViewModel>
     {
         protected override void Configure(IObjectTypeDescriptor<RatViewModel> descriptor)
         {
             descriptor.Field(t => t.Id)
-                .Type<NonNullType<IdType>>();
+              .Type<NonNullType<IdType>>();
         }
-        
     }
 }

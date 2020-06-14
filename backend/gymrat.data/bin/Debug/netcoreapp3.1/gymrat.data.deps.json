@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Gymrat.Data/1.0.0": {
         "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "3.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.4",
           "Microsoft.EntityFrameworkCore.Design": "3.1.4",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.4",
@@ -33,6 +34,16 @@
           }
         }
       },
+      "Microsoft.CodeAnalysis.FxCopAnalyzers/3.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "3.0.0",
+          "Microsoft.CodeQuality.Analyzers": "3.0.0",
+          "Microsoft.NetCore.Analyzers": "3.0.0",
+          "Microsoft.NetFramework.Analyzers": "3.0.0"
+        }
+      },
+      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/3.0.0": {},
+      "Microsoft.CodeQuality.Analyzers/3.0.0": {},
       "Microsoft.CSharp/4.7.0": {},
       "Microsoft.EntityFrameworkCore/3.1.4": {
         "dependencies": {
@@ -210,6 +221,8 @@
           }
         }
       },
+      "Microsoft.NetCore.Analyzers/3.0.0": {},
+      "Microsoft.NetFramework.Analyzers/3.0.0": {},
       "Npgsql/4.1.3": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.6.0"
@@ -274,6 +287,27 @@
       "sha512": "sha512-J2G1k+u5unBV+aYcwxo94ip16Rkp65pgWFb0R6zwJipzWNMgvqlWeuI7/+R+e8bob66LnSG+llLJ+z8wI94cHg==",
       "path": "microsoft.bcl.hashcode/1.1.0",
       "hashPath": "microsoft.bcl.hashcode.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.FxCopAnalyzers/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ea8bbNa4fzS/s55AUCAvYjb6Y3lFysFVfEwt9zIwR/NeFpOcUluIleOXSUPAyUtwBFugn01aWvNfMVmIwnvgqQ==",
+      "path": "microsoft.codeanalysis.fxcopanalyzers/3.0.0",
+      "hashPath": "microsoft.codeanalysis.fxcopanalyzers.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RL9OdvWLhtQXcvxK2EPbXM9LandLcDG14Ndz5baVH2aiyvEB11VrHfrzLNoEE5B2/zhRGqN+BHsBg21f75wG9g==",
+      "path": "microsoft.codeanalysis.versioncheckanalyzer/3.0.0",
+      "hashPath": "microsoft.codeanalysis.versioncheckanalyzer.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.CodeQuality.Analyzers/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pOROTgdPa+15sYfEMvDlWlDEedCO1SuRLrRjX36Ltli3SmhZawC2Vgws4crz1XMs9WRzBo8WIJM5WRzGNsOSmQ==",
+      "path": "microsoft.codequality.analyzers/3.0.0",
+      "hashPath": "microsoft.codequality.analyzers.3.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
@@ -400,6 +434,20 @@
       "sha512": "sha512-tLR9n5ltwA56nr1t5M6q5IBfGLXtMS+XgumtqVENmtPQOWUD+m0Kgo1U6GWr06Y875WUN3sOGnmqkvW4an7fYA==",
       "path": "microsoft.extensions.primitives/3.1.4",
       "hashPath": "microsoft.extensions.primitives.3.1.4.nupkg.sha512"
+    },
+    "Microsoft.NetCore.Analyzers/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JdjhkobYjmQAu4JpsEALDAr7xig2pzXMsXGilHJ2gvmUaUSBjYObw53CBaIkRXmPu0DaDPN8ze9LCtsRd1R8UA==",
+      "path": "microsoft.netcore.analyzers/3.0.0",
+      "hashPath": "microsoft.netcore.analyzers.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.NetFramework.Analyzers/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q0sB3JYld9JMa9/HKtioIxhqmOohEku1FkfSC/uf0usGcCIhm6GYWU565klP64jC2kzmjFIu/6fkHEIYRqZCQQ==",
+      "path": "microsoft.netframework.analyzers/3.0.0",
+      "hashPath": "microsoft.netframework.analyzers.3.0.0.nupkg.sha512"
     },
     "Npgsql/4.1.3": {
       "type": "package",
