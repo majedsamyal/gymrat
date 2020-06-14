@@ -51,6 +51,12 @@ export default {
         bootstrapCSS: false,
         bootstrapVueCSS: false
   },
+  /*
+  ** Axios configuration
+  */
+  axios: {
+  baseURL:"http://localhost:7071/api/"
+},
 
   /*
   ** Style resources

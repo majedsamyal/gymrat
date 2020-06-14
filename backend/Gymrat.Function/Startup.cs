@@ -41,7 +41,7 @@ namespace Gymrat.Function
                 //.AddAuthorizeDirectiveType()
 
                 .AddQueryType<RatQueryType>()
-                .AddType<RatViewModelType>()
+                .AddMutationType<RatMutationsType>()               
                 //.AddMutationType<MutationType>()
                 //.AddType<HumanType>()
                 //.AddType<DroidType>()
