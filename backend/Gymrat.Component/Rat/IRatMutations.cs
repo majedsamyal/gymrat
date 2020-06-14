@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace Gymrat.Component.Rat
 {
-   public interface IRatQueries
+   public interface IRatMutations
     {
-        Task<IList<RatViewModel>> GetRats();
-     
+        Task<RatViewModel> SaveRat(RatViewModel ratViewModel);
     }
 }
