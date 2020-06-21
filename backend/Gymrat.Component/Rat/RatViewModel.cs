@@ -12,7 +12,7 @@ namespace Gymrat.Component.Rat
 		public string LastName { get; set; }
 		public bool IsActive { get; set; }
 		public bool IsDeleted { get; set; }
-		public DateTime CreatedDateTime { get; set; }
-		public DateTime UpdateDateTime { get; set; }
+		public string CreatedDateTime { get; set; }
+		public string UpdateDateTime { get; set; }
 	}
 }
