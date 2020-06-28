@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gymrat.Data", "..\gymrat.da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gymrat.Component", "..\Gymrat.Component\Gymrat.Component.csproj", "{95995511-75E8-4C02-805D-1DF4619AE28E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gymrat.Common", "..\Gymrat.Common\Gymrat.Common.csproj", "{B477F91E-2CFD-4DF7-9049-1BE4991B0ABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{95995511-75E8-4C02-805D-1DF4619AE28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95995511-75E8-4C02-805D-1DF4619AE28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95995511-75E8-4C02-805D-1DF4619AE28E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B477F91E-2CFD-4DF7-9049-1BE4991B0ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B477F91E-2CFD-4DF7-9049-1BE4991B0ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B477F91E-2CFD-4DF7-9049-1BE4991B0ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B477F91E-2CFD-4DF7-9049-1BE4991B0ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
