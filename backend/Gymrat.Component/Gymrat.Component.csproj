@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Gymrat.Common\Gymrat.Common.csproj" />
     <ProjectReference Include="..\gymrat.data\Gymrat.Data.csproj" />
   </ItemGroup>
 
