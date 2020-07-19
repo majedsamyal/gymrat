@@ -6,6 +6,6 @@ namespace Gymrat.Common
 {
    public static class GymratConstant
     {
-        public static DateTime GymratCurrentTime => DateTime.UtcNow; 
+        public static DateTime CurrentDateTime => DateTime.UtcNow; 
     }
 }

@@ -1,4 +1,5 @@
-﻿using Gymrat.Data.Repository.Core;
+﻿using Gymrat.Common;
+using Gymrat.Data.Repository.Core;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -23,11 +24,12 @@ namespace Gymrat.Component.Rat
                 LastName = ratViewModel.LastName,
                 IsActive = true,
                 IsDeleted = false,
-                CreatedDateTime = DateTime.UtcNow,
-                UpdateDateTime = DateTime.UtcNow
+                CreatedDateTime = GymratConstant.CurrentDateTime,
+                UpdateDateTime = GymratConstant.CurrentDateTime
             };
 
             await _unitOfWork.Rats.Insert(entity);
+            _unitOfWork.Commit();
             ratViewModel.Id = entity.Id;
             return ratViewModel;
         }

@@ -27,7 +27,38 @@ export  default {
   },
   methods: {
   async saveRat() {
-     await this.$axios.post('graphql',{})
+     await this.$axios.post('http://localhost:7071/api/graphql',
+     {
+    query: `
+      mutation saveRat($id:String!, $emailId:String!, $firstName:String!, $lastName:String!, $createdDateTime:String, $updateDateTime:String , $isDeleted: Bool, $isActive: Bool) {
+        saveRat(ratViewModel:{
+          id:$id, emailId:$emailId, firstName:$firstName, lastName:$lastName, createdDateTime: $createdDateTime, updateDateTime: $updateDateTime, isDeleted: $isDeleted, isActive: $isActive) {
+            id
+            emailId
+            firstName
+            lastName
+            createdDateTime
+            updateDateTime
+            isDeleted
+            isActive
+        }
+      })
+      }
+    `,
+    variables: {
+      id: "123",
+      emailId: "test@t.com",
+      firstName:"Majed",
+      lastName: "Samyal",
+      createdDateTime: "",
+      updateDateTime : "",
+      isDeleted: false,
+      isActive : true
+    },
+  },{
+    headers: {
+      'Content-Type': 'application/json'
+    })
     .then(function(resposne){
       console.log(resposne);
     })
